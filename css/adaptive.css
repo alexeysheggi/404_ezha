@@ -1,0 +1,23 @@
+@media screen and (max-width: 650px) {
+    .pic__backg{
+        position:fixed;
+        width: 500px;
+    }
+
+    .pic__coffee{
+        position: fixed;
+        width: 430px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .title{
+        top: 60%;
+        font-size: 4rem;
+    }
+
+    .button{
+        top: 66%;
+        width: 120px;
+    }
+}

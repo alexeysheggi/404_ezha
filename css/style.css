@@ -1,0 +1,104 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pic__coffee{
+    position: absolute;
+    width: 600px;
+    z-index: 1;
+}
+
+.coffee{
+    -webkit-animation: coffeeanimation 2.3s;
+    animation: coffeeanimation 2.3s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes coffeeanimation {
+    from{
+        -webkit-transform: rotate(12deg);
+        transform: rotate(12deg);
+    }   
+    to{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes coffeeanimation {
+    from{
+        -webkit-transform: rotate(12deg);
+        transform: rotate(12deg);
+    }   
+    to{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+.pic__backg{
+    position: absolute;
+    width: 620px;
+    z-index: 2;
+    mix-blend-mode: darken;
+}
+
+.backg{
+    -webkit-animation: backanimation 2s;
+    animation: backanimation 2s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes backanimation {
+    from{
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+    }
+    to{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes backanimation {
+    from{
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+    }
+    to{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.title{
+    position: relative;
+    top: 65%;
+    font-family: 'roboto';
+    font-weight: normal;
+    font-size: 6rem;
+    z-index: 5;
+}
+
+.button{
+    position: relative;
+    width: 170px;
+    height: 60px;
+    top: 68%;
+    z-index: 6;
+    border-radius: 62px;
+    background-color: #FCD561;
+    font-family: 'roboto';
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #333336;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
